@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="topbar">
-            <ul class="top-nav">
-                <li class="topbar-button"><a href="../index.html">Główna</a></li>
-                <li class="topbar-button"><a href="html.html">html</a></li>
-                <li class="topbar-button"><a href="css.html">css</a></li>
-                <li class="topbar-button"><a href="js.html">js</a></li>
-                <li class="topbar-button"><a href="terminalIGit.html">git i terminal</a></li>
-                <li class="topbar-button"><a href="examples.html">przykłady</a></li>
-            </ul>
-        </nav>
+      <nav class="topbar">
+        <ul class="top-nav">
+          <li class="topbar-button"><a href="../index.html">Główna</a></li>
+          <li class="topbar-button"><a href="html.html">html</a></li>
+          <li class="topbar-button"><a href="css.html">css</a></li>
+          <li class="topbar-button"><a href="js.html">js</a></li>
+          <li class="topbar-button">
+            <a href="terminalIGit.html">git i terminal</a>
+          </li>
+          <li class="topbar-button"><a href="examples.html">przykłady</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <section>
-            <article>
-                <h1>tu będzie o systemie kontroli wersji git i terminalu</h1>
-            </article>
-            <img src="/../img/gwatemala.jpg" alt="gwatemala" width="40%">
-            <article>
-                <h2>tu będzie spis treści jakiś</h2>
-            </article>
-        </section>
-        <section>
-            <h2>podstawy gita</h2>
-            <p>repozytorium = projekt, wszystkie pliki naszego projektu</p>
-            <p>commit = stan projektu, rejestr zmian w plikach, zawiera dokładne informacje co się zmieniło od poprzedniego commita, tworzy wersję do której można wrócić<br>
-            commit zapisuje historie zmian</p>
-            <h2>komendy git</h2>
-            <article>
-                <span>git --version /sprawdzanie wersji</span>
-                <span>git config - konfiguracja </span>
-                <span>git status</span>
-                <span>git add . /dodaje pliki do śledzenia przez git. Kropka dodaje wszystkie pliki z katalogu w który, się znajdujemy, plus podkatalogi. Ważne, nie dodaje plików z katalogów równoległych ani wyższych.</span>
-                <span>git commit -m "opis zmian" /tworzy commita na stan obecny wszystkich plików dodanych do śledzenia. Śledzi zmiany w plikach edytowalnych przez edytor tekstu (np. css), nie śledzi zmian w innych typach (np. jpg, czy txt), te pliki podmieni w całości. Lepiej komitować częściej, np. po stworzeniu każdej sekcji, po dodaniu klas do sekcji itd. Nie wystarczy po np. dniu pracy.</span>
-                <span> gitk - podgląd historii commitów projektu</span>
-            </article>
-        </section>
-        <section>
-            <h2>Github</h2>
-            <article></article>
-        </section>
-    
+      <section>
+        <article>
+          <h1>tu będzie o systemie kontroli wersji git i terminalu</h1>
+        </article>
+        <img src="/../img/gwatemala.jpg" alt="gwatemala" width="40%" />
+        <article>
+          <h2>tu będzie spis treści jakiś</h2>
+        </article>
+      </section>
+      <section>
+        <h2>podstawy gita</h2>
+        <p>repozytorium = projekt, wszystkie pliki naszego projektu</p>
+        <p>
+          commit = stan projektu, rejestr zmian w plikach, zawiera dokładne
+          informacje co się zmieniło od poprzedniego commita, tworzy wersję do
+          której można wrócić<br />
+          commit zapisuje historie zmian
+        </p>
+        <h2>komendy git</h2>
+        <article>
+          <span>git --version /sprawdzanie wersji</span>
+          <span>git config - konfiguracja </span>
+          <span>git status</span>
+          <span
+            >git add . /dodaje pliki do śledzenia przez git. Kropka dodaje
+            wszystkie pliki z katalogu w który, się znajdujemy, plus
+            podkatalogi. Ważne, nie dodaje plików z katalogów równoległych ani
+            wyższych.</span
+          >
+          <span
+            >git commit -m "opis zmian" /tworzy commita na stan obecny
+            wszystkich plików dodanych do śledzenia. Śledzi zmiany w plikach
+            edytowalnych przez edytor tekstu (np. css), nie śledzi zmian w
+            innych typach (np. jpg, czy txt), te pliki podmieni w całości.
+            Lepiej komitować częściej, np. po stworzeniu każdej sekcji, po
+            dodaniu klas do sekcji itd. Nie wystarczy po np. dniu pracy.</span
+          >
+          <span> gitk - podgląd historii commitów projektu</span>
+        </article>
+      </section>
+      <section>
+        <h2>Github</h2>
+        <article></article>
+      </section>
     </main>
     <footer class="footer">
-        tu będzie jakaś stopka
+      tu będzie jakaś stopka
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -8,19 +8,17 @@
 }
 body {
     line-height: 1.15;
-    position: relative;
     background-color: #312f49;
     color: lavenderblush;
 }
 a {
     display: block;
     color: inherit;
+    padding: 0;
 }
 .topbar {
     width: 100%;
-    position: fixed;
-    top: 0;
-    height: 2.5em;
+    height: 32px;
     background-color: #ffc353;
     color: #312f49;
     z-index: 999;
@@ -29,12 +27,13 @@ a {
     display: flex;
     justify-content: flex-end;
     flex-flow: row wrap;
+    padding: 0 16px 0 0;
+    list-style-type: none;
 }
 .topbar-button {
-    display: inline-block;
+    display: block;
+    line-height: 32px;
     padding: 0 20px;
-    height: 2.5em;
-    line-height: 2.5em;
 }
 .topbar-button:hover {
     background-color: #312f49;
@@ -42,11 +41,8 @@ a {
     cursor: pointer;
 }
 .main {
-    position: relative;
-    height: 100vh;
-    margin: 2.5em 0;
     padding: 3em 3em 0;
-
+    min-height: calc(100vh - 94px);
 }
 
 .tag {
@@ -63,11 +59,9 @@ a {
     color: gold;
 }
 .footer {
-    margin: auto;
+    margin: 30px auto 0;
     background-color: #ffc353;
     color: #312f49;
-    position: absolute;
     width: 100%;
-    line-height: 2em;
-    bottom: 1;
+    line-height: 32px;
 }
