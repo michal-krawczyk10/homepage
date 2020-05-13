@@ -25,13 +25,78 @@
         <section>
             <article>
                 <h1>tu polecą css'y</h1>
-                <img src="/../img/kimono.png" alt="kwiatki z kimono" width="50%" >
+                <img src="/../img/kimono.png" alt="kwiatki z kimono" width="50%">
             </article>
         </section>
         <section>
             <article>
                 <h2> klasy</h2>
                 <p>kebab-case</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Własności i ich wartości</h2>
+                <h3>wielkości elementów</h3>
+                    <p>display
+                        <p>block / elementy ustawiają się jeden pod drugim</p>
+                        <p>inline / elementy ustawiają się obok siebie</p>
+                        <p>inline-block / element zachowuje się jak liniowy, ale można mu nadawać własności blokowe, np
+                        width/height</p>
+                    </p>
+                    <p>width/height / nie działa w display: inline</p>
+                    <p>max-width/height / height rzadko się korzysta</p>
+                    <p>min-width/height</p>
+                    <p>overflow / wpływa na treść wobec boxa
+                        <p>visible / domyślna wartość</p>
+                        <p>hidden / chowa treść jeśli jest jej za dużo</p>
+                        <p>auto - dodaje scroll w elemencie</p>
+                    </p>
+                <h3>box model (do zrobienia graficzka, z hooverami itp)</h3>
+                    <p> wszystkie własności css, które mają kierunki działają na zasadzie zegarka, wartości można podawać w kolejności top - right - bottom - left.</p>
+                    <p>padding / wewnętrzny margines
+                        <p>padding-top/left/right/buttom: (jednostka)</p>
+                    </p>
+                    <p>border / obramowanie, też działa zasada zegarka
+                        <p>zapis skrótowy:<br>
+                        border: 10px solid red (szerokość, styl, kolor)</p>   
+                    </p>
+                    <p>border-radius / zaokrąglenie granic. wartość w jednostkach, np. 20px. 50% - daje okrąg. </p>
+                    <p>margin / margines, odsuwa element od innych elementów.  Nie jest jego częścią. Zapis taki sam jak w paddingach. Działa tylko przy elementach blokowych. Marginesy różnych elementów się sumują
+                        <p>auto / jeśli element ma display: block && ustaloną szerokość, margin: __px auto wyśrodkuje element w poziomie nadając automatyczne równe marginesy po obu stronach. </p>
+                    </p>
+                    <p>box-sizing <b>grafika</b>/
+                        <p>content-box / domyślna wartość, mówi, że definiowana szerokośc/wysokość, odnosi się do kontentu, nie wpływa na padding, border i margines</p>
+                        <p>border-box / wlicza do wielkości elementu, także padding i border. dzięki temu łatwiej można nadać elementowi rządany rozmiar</p>
+                    </p>
+                <p>position
+                    <p>position: static /domyślna wartość</p>
+                    <p>position: relative / sprawia,że element staje się domyślny dla podelementów i można je pozycjonować wg. niego za pomocą kolejnej wartości</p>
+                    <p>position: absolute / pozycjonuje element względem elementu relative, na zasadzie układu współrzędnych. Jeśli nie ma elementu relative, pozycjonuje od body. Należy mu nadać kolejne własności:
+                        <p>top, right, bottom, left <br> przykład<br> top: __px; ustawia element o pozycji absolute o wskazaną odkległość od górnej krawędzie elementu relative.
+                        </p>
+                    </p>
+                    <p>z-index / definiuje warstwy/trzeci wymiar. Gdy elementy nachodzą na siebie, widoczny jest ten o wyższej wartości z-index</p>
+                    
+                    <p>position: fixed <br> pozycjonuje element na stałe w jednym miejscu viewportu, niezależnie od innych elementów
+                    </p>
+                    <p>position: sticky /  przykleja się do wyznaczonego miejsca i pozostaje w nim dopuki parent-element jest widoczny. żeby zadziałał, rodzic nie może mieć overflow'a.</p>
+                    
+                </p>
+                <p>float
+                    <p>przyjmuje wartości jak absolut (left itd)</p>
+                    <p>nie budujemy nim layoutów. służy do wstawiania elementu, który będzie "opłynięty" treścią rodzica.</p>
+                    <p>clear: left, right, both, dopasowuje wielkośc rodzica, jeśli float poza niego wystaje</p>
+                    <p>overflow:hidden / chowa float pod krawędzią rodzica, jeśli float chce wystawać poza</p>
+                </p>       
+            </article>
+            <article>
+                <h2>Jednostki wielkości</h2>
+                <p>0 - zawsze jest zerem, można dopisać po nim dowolną jednostkę, ale nie trzeba</p>
+                <p>px - piksel</p>
+                <p>% - procenty liczone są względem elementu rodzica</p>
+                <p>vw - procent szerokości viewportu (okna)</p>
+                <p>vh - procent wysokości viewportu. używane często jest 100vh</p>
             </article>
         </section>
     </main>
