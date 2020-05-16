@@ -1,67 +1,106 @@
+$color1: #312f49;
+$color2: #fff0f5;
+$color3: #ffc353;
+$codeColor1: #ff0481;
+$codeColor2: #7dfa00;
+$codeColor3: #fff0f5;
+$codeColor4: #ffd700;
 
 * {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: monospace;
 }
 body {
-    line-height: 1.15;
-    background-color: #312f49;
-    color: lavenderblush;
+  background-color: $color1;
+  color: $color2;
 }
 a {
-    display: block;
-    color: inherit;
-    padding: 0;
+  display: block;
+  color: inherit;
+  padding: 0;
 }
 .topbar {
-    width: 100%;
-    height: 32px;
-    background-color: #ffc353;
-    color: #312f49;
-    z-index: 999;
+  width: 100%;
+  height: 32px;
+  background-color: $color3;
+  color: $color1;
 }
-.top-nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    padding: 0 16px 0 0;
-    list-style-type: none;
+.topbar__navigation {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  padding: 0 16px 0 0;
+  list-style-type: none;
 }
-.topbar-button {
-    display: block;
-    line-height: 32px;
-    padding: 0 20px;
+.topbar__navigation--button {
+  display: block;
+  line-height: 32px;
+  padding: 0 20px;
 }
-.topbar-button:hover {
-    background-color: #312f49;
-    color: #ffc353;
-    cursor: pointer;
+.topbar__navigation--button:hover {
+  background-color: $color1;
+  color: $color3;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .main {
-    padding: 3em 3em 0;
-    min-height: calc(100vh - 94px);
+  padding: 3em 3em 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: calc(100vh - 94px);
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
 }
 
 .tag {
-    color: #ff0481;
+  color: $codeColor1;
 }
 .atr {
-    color: lawngreen;
+  color: $codeColor2;
 }
 .plain {
-    color: lavenderblush;
+  color: $codeColor3;
 }
-
 .path {
-    color: gold;
+  color: $codeColor4;
 }
 .footer {
-    margin: 30px auto 0;
-    background-color: #ffc353;
-    color: #312f49;
-    width: 100%;
-    line-height: 32px;
+  margin: 30px auto 0;
+  background-color: $color3;
+  color: $color1;
+  width: 100%;
+  line-height: 2em;
+  text-align: center;
+}
+
+.welcome {
+  border: dashed 2px $color3;
+  border-radius: 30px;
+}
+.welcome__header {
+  font-size: 32px;
+  padding: 16px;
+  text-align: center;
+}
+.welcome__text {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px;
+  text-align: justify;
+}
+.welcome__text--image-descryption {
+  text-align: center;
+}
+.welcome__image {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }

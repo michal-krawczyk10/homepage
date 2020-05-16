@@ -11,30 +11,31 @@
 <body>
     <header>
         <nav class="topbar">
-            <ul class="top-nav">
-                <li class="topbar-button"><a href="index.html">Główna</a></li>
-                <li class="topbar-button"><a href="pages/html.html">html</a></li>
-                <li class="topbar-button"><a href="pages/css.html">css</a></li>
-                <li class="topbar-button"><a href="pages/js.html">js</a></li>
-                <li class="topbar-button"><a href="pages/terminalIGit.html">git i terminal</a></li>
-                <li class="topbar-button"><a href="pages/examples.html">przykłady</a></li>
+            <ul class="topbar__navigation">
+                <li class="topbar__navigation--button"><a href="index.html">Główna</a></li>
+                <li class="topbar__navigation--button"><a href="pages/html.html">html</a></li>
+                <li class="topbar__navigation--button"><a href="pages/css.html">css</a></li>
+                <li class="topbar__navigation--button"><a href="pages/js.html">js</a></li>
+                <li class="topbar__navigation--button"><a href="pages/terminalIGit.html">git i terminal</a></li>
+                <li class="topbar__navigation--button"><a href="pages/examples.html">przykłady</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section class="welcome">
-            <article>
-                <h1>Lecim z frontendem</h1>
-                <p>Jak narazie jest tu chaos, ale będzie większy pewnie :). Pierwotnie nie miałem zupełnie pomysłu jak zrobić własną stronę domową, popularna koncepcja dziennika z nauki do mnie nie dociera. Potem wymyśliłem, że niech to
+        <section>
+            <article class="welcome">
+                <h1 class="welcome__header">Lecim z frontendem</h1>
+                <p class="welcome__text">Jak narazie jest tu chaos i będzie pewnie większy :). Nie miałem zupełnie pomysłu jak zrobić własną stronę domową, koncepcja dziennika z nauki do mnie nie dociera. Potem wymyśliłem, że niech to
                 będzie własne narzędzie ze skondensowaną wiedzą i tipami na jakie się natknę w ramach rozwoju. Tak
                 żeby później nie musieć się przekopywać przez internet i szereg własnych plików, szukając rzeczy, które już
                 kiedyś znalazłem i ogarnąłem. Plus, będę wrzucać przerobione pomysły i przykłady jak zrobić różne
-                rzeczy, zaczynając od absolutnych podstaw. Projekt będzie rozwijany w ramach ogarniania tematu, docelowo, będę tu wrzucał też linki do stron, które zrobiłem, więc może wyjdzie z tego jakieś fajne
-                portfolio. :)<br><br>
-
-                ps. obrazki są dla atencji i jak narazie nie mają związku z treścią :)
+                rzeczy, zaczynając od absolutnych podstaw. Projekt będę rozijał w ramach ogarniania tematu, docelowo, będę tu wrzucał też linki do stron, które zrobiłem, więc może wyjdzie z tego jakieś fajne
+                portfolio. :)              
                 </p>
-                <img src="/img/bułka.jpg" alt="zdjęcie tłustej kotobułki" width="400px">
+            </article>
+            <article>
+                <p class="welcome__text welcome__text--image-descryption">patronką stronki została ta oto tłusta kotobułka</p>
+                <img src="/img/bułka.jpg" alt="zdjęcie tłustej kotobułki" class="welcome__image">
             </article>
         </section>
     </main>
