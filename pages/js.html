@@ -23,49 +23,49 @@
     </header>
     <main class="main">
         <section>
-            <article>
-                <h1>Tu będzie magia js'a bo js to magia</h1>
+            <article class="welcome">
+                <h1 class="welcome__header">Tu będzie magia js'a, którego jak narazie nie kumam.</h1>
             </article>
-            <img src="/../img/dziwny.png" alt="lisie sprawy" class="image">
+            <img src="/../img/dziwny.png" alt="lisie sprawy" class="welcome__image">
         </section>
         <section>
-            <article>
-                <h2>Typy danych</h2>
-                <p>zmienna
-                    <p> Zmienna to nie jest wartość, zmienna tylko wskazuje na jakąś wartość!</p>
-                    <p>
+            <article class="article">
+                <h2 class="article__header">Typy danych</h2>
+                <p class="article__text">zmienna
+                    <p class="article__text"> Zmienna to nie jest wartość, zmienna tylko wskazuje na jakąś wartość!</p>
+                    <p class="article__text">
                         let vs const vs var<br>
                         var jest uniwersalne, obecnie się od niej odchodzi;
                         <br>
                         const to zmienna, które ma stałe połączenie z wartością i się nie zmienia (od constant);<br>
                         let - zmienna, której wartość można zmienić
                     </p>
-                    <p>
+                    <p class="article__text">
                         Zmienną definiuje się tylko raz. W zmiennej może być cokolwiek.
                     </p>
                 </p>
-                <p>
+                <p class="article__text">
                     Typy proste w JS (primitives)
-                    <p>String - tekst, otaczany 'apostrofami'</p>
-                    <p>number - wiadomo</p>
+                    <p class="article__text">String - tekst, otaczany 'apostrofami'</p>
+                    <p class="article__text">number - wiadomo</p>
                     
-                    <p>boolean - wartość: true lub false </p>
-                    <p>null - wartość niezdefiniowana celowo, która gdzieś później się pojawi, lub musimy zaznaczyć że ta zmienna istnieje, ale nie znamy jej wartości. Wskazuje na 'nic' </p>
-                    <p>undefined - zmienna niezdefiniowana, do której się próbujemy dostać</p>
-                    <p>Można sprawdzić w konsoli, jakiego typu jest zmienna, za pomocą wyrażenia, przydaje się do sprawdzenia czy zmienna jest zdefiniowana<br>
+                    <p class="article__text">boolean - wartość: true lub false </p>
+                    <p class="article__text">null - wartość niezdefiniowana celowo, która gdzieś później się pojawi, lub musimy zaznaczyć że ta zmienna istnieje, ale nie znamy jej wartości. Wskazuje na 'nic' </p>
+                    <p class="article__text">undefined - zmienna niezdefiniowana, do której się próbujemy dostać</p>
+                    <p class="article__text">Można sprawdzić w konsoli, jakiego typu jest zmienna, za pomocą wyrażenia, przydaje się do sprawdzenia czy zmienna jest zdefiniowana<br>
                     typeof nazwaZmiennej
                     </p>
                 </p>
-                <p>immutability - 'niezmienność', 'niemutowalność'
-                    <p>Nie możemy zmieniac wartości primitive values w JS, wartości zmiennych istnieją same w sobie, a my tylko zmieniamy połączenia między nimi i do nich.<br>
+                <p class="article__text">immutability - 'niezmienność', 'niemutowalność'
+                    <p class="article__text">Nie możemy zmieniac wartości primitive values w JS, wartości zmiennych istnieją same w sobie, a my tylko zmieniamy połączenia między nimi i do nich.<br>
                     let x = 10, nie oznacza, że x jest równe 10, tylko, że x wskazuje na 10. 10 istnieje niezależnie od x.</p>
                 </p>
             </article>
         </section>
         <section>
-            <article>
-                <h2>DOM - Document Object Model</h2>
-                <p>DOM to "złożony w przeglądarce HTML"<br>
+            <article class="article">
+                <h2 class="article__header">DOM - Document Object Model</h2>
+                <p class="article__text">DOM to "złożony w przeglądarce HTML"<br>
                 JS może go modyfikować.<br>
                 funkcja querySelector zwraca node (węzeł) z Html-a, selektor zapisywany jest zgodnie z css<br>
                 korzystając z BEM - tworzymy dodatkową klasę z modyfikatorem --js, ułatwia to identyfikację i usuwa potencjalne problemy<br>
