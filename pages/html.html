@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="topbar">
-            <ul class="topbar__navigation">
-                <li class="topbar__navigation--button"><a href="../index.html">Główna</a></li>
-                <li class="topbar__navigation--button"><a href="html.html">html</a></li>
-                <li class="topbar__navigation--button"><a href="css.html">css</a></li>
-                <li class="topbar__navigation--button"><a href="js.html">js</a></li>
-                <li class="topbar__navigation--button"><a href="terminalIGit.html">git i terminal</a></li>
-                <li class="topbar__navigation--button"><a href="examples.html">przykłady</a></li>
-            </ul>
-        </nav>
+      <nav class="topbar">
+        <ul class="topbar__navigation">
+          <li class="topbar__navigation--button">
+            <a href="../index.html">Główna</a>
+          </li>
+          <li class="topbar__navigation--button">
+            <a href="html.html">html</a>
+          </li>
+          <li class="topbar__navigation--button"><a href="css.html">css</a></li>
+          <li class="topbar__navigation--button"><a href="js.html">js</a></li>
+          <li class="topbar__navigation--button">
+            <a href="terminalIGit.html">git i terminal</a>
+          </li>
+          <li class="topbar__navigation--button">
+            <a href="examples.html">przykłady</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
-        <section>
-            <article>
-                <h1>Tu się pojawią różne htmlowe rzeczy</h1>                
-            </article>
-            <article>
-                <h2>Fotki, czyli jak dodać obrazek</h2>
-                <p><i>np. taki:</i></p>
-                <img src="/../img/llama.jpg" alt="llama del rey" class="image">
-                <p>Wklejanie zdjęc jest proste, kod wygląda tak:<br><br>
-                    <code>
-                        <span class="plain"><</span>
-                        <span class="tag">img</span>
-                        <span class="atr">src</span>
-                        <span class="plain">=</span>
-                        <span class="path">"/link-do-zdjęcia.jpg"</span>
-                        <span class="atr">alt</span>
-                        <span class="plain">=</span>
-                        <span class="path">"llama"</span>
-                        <span class="plain">></span>
-                    </code>
-                </p>
-                <section>
-                    <h2>Atrybuty i ich cechy</h2>
-                    <p>src<br> dla przeglądarki ważny jest slash / na początku linku</p>
-                    <p>width & height<br>przy użyciu tylko jednego z nich, drugi skaluje się według proporcji oryginału</p>
-                    <p>alt<br>krótki opis zdjęcia, ważne aby opisać co się dzieje na zdjęciu</p>
-                </section>
-            </article>        
-        </section>
+      <section>
+        <article class="welcome">
+          <h1 class="welcome__header">Tu są różne htmlowe rzeczy</h1>
+          <p class="welcome__text">
+            (w tym miejscu będzie spis treści jak będzie więcej treści)
+          </p>
+        </article>
+        <article class="article">
+          <h2 class="article__header">Fotki, czyli jak dodać obrazek</h2>
+          <p class="article__text--image-descryption"><i>np. taki:</i></p>
+          <img
+            src="/../img/llama.jpg"
+            alt="llama del rey"
+            class="article__image"
+          />
+          <p class="article__text">
+            Wklejanie zdjęc jest proste, kod wygląda tak:
+          </p>
+          <div class="code">
+            <code class="code__text">
+              <span class="code__text--plain"><</span>
+              <span class="code__text--tag">img</span>
+              <span class="code__text--atribute">src</span>
+              <span class="code__text--plain">=</span>
+              <span class="code__text--path">"/link-do-zdjęcia.jpg"</span>
+              <span class="code__text--atribute">alt</span>
+              <span class="code__text--plain">=</span>
+              <span class="code__text--path">"llama"</span>
+              <span class="code__text--plain">></span>
+            </code>
+          </div>
+          <section>
+            <h2 class="article__header">Atrybuty i ich cechy
+            </h2>
+            <p class="article__text">
+                <span class="code__text--atribute"> src<br /></span>
+              Wskazuje lokalizację zdjęcia. Dla przeglądarki ważny jest slash / na początku linku.
+            </p>
+            <p class="article__text">
+                <span class="code__text--atribute"> alt<br /></span>Krótki opis zdjęcia, m.in. na wypadek gdyby nie zadziałało, ważne aby krótko ale w miarę dokładnie opisać co się dzieje na zdjęciu.
+            </p>
+            <p class="article__text">
+                <span class="code__text--atribute"> width/height<br /></span>
+                Przy użyciu tylko jednego z nich, drugi
+              skaluje się według proporcji oryginału. Alternatywa dla klasy.
+            </p>
+            <p class="article__text">
+                <span class="code__text--atribute"> class<br /></span>
+                Pozwala ostylować zdjęcie, wydaje mi się lepszym rozwiązaniem.
+            </p>
+          </section>
+        </article>
+      </section>
     </main>
     <footer class="footer">
-        tu będzie jakaś stopka
+      tu będzie jakaś stopka
     </footer>
-</body>
-
+  </body>
 </html>
