@@ -88,6 +88,9 @@ a {
 .code__text--tag {
   color: $codeColor1;
 }
+.code__text--property {
+  color: $codeColor5;
+}
 
 .topbar {
   width: 100%;
@@ -160,4 +163,8 @@ a {
   width: 400px;
   display: block;
   margin: 0 auto;
+}
+
+.welcome__image--aw-fish {
+  width: 200px;
 }

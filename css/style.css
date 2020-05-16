@@ -88,6 +88,10 @@ a {
   color: #ff0481;
 }
 
+.code__text--property {
+  color: #24ccf6;
+}
+
 .topbar {
   width: 100%;
   height: 48px;
@@ -167,6 +171,10 @@ a {
   width: 400px;
   display: block;
   margin: 0 auto;
+}
+
+.welcome__image--aw-fish {
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
