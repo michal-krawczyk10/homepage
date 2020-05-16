@@ -30,6 +30,11 @@ a {
   text-align: left;
 }
 
+.article__header--subheader {
+  font-size: 22px;
+  padding: 16px 24px 0;
+}
+
 .article__text {
   font-size: 20px;
   line-height: 1.5;
@@ -47,10 +52,14 @@ a {
   text-align: center;
 }
 
+.article__image--bem {
+  width: 90%;
+}
+
 .code {
   display: block;
   width: 80%;
-  margin: 0 auto;
+  margin: 16px auto;
   background-color: #232235;
   border-radius: 20px;
   padding: 16px 16px;
@@ -122,6 +131,7 @@ a {
 }
 
 .footer {
+  font-size: 20px;
   margin: 30px auto 0;
   background-color: #ffc353;
   color: #312f49;
@@ -154,7 +164,7 @@ a {
 }
 
 .welcome__image {
-  width: 300px;
+  width: 400px;
   display: block;
   margin: 0 auto;
 }

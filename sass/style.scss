@@ -6,6 +6,7 @@ $codeColor1: #ff0481;
 $codeColor2: #7dfa00;
 $codeColor3: #fff0f5;
 $codeColor4: #ffd700;
+$codeColor5: #24ccf6;
 
 * {
   margin: 0;
@@ -36,6 +37,10 @@ a {
   padding: 16px 16px 0;
   text-align: left;
 }
+.article__header--subheader {
+  font-size: 22px;
+  padding: 16px 24px 0;
+}
 
 .article__text {
   font-size: 20px;
@@ -53,10 +58,14 @@ a {
   text-align: center;
 }
 
+.article__image--bem {
+  width: 90%;
+}
+
 .code {
   display: block;
   width: 80%;
-  margin: 0 auto;
+  margin: 16px auto;
   background-color: $color1a;
   border-radius: 20px;
   padding: 16px 16px;
@@ -119,6 +128,7 @@ a {
 }
 
 .footer {
+  font-size: 20px;
   margin: 30px auto 0;
   background-color: $color3;
   color: $color1;
@@ -147,7 +157,7 @@ a {
   text-align: center;
 }
 .welcome__image {
-  width: 300px;
+  width: 400px;
   display: block;
   margin: 0 auto;
 }
