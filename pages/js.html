@@ -112,7 +112,9 @@
 			<section class="section">
 				<h2 class="section__header">Metody JS</h2>
 				<article class="article">
-					<h3 class="article__header">Podpięcie DOM do html / JS do elementu HTML</h3>
+					<h3 class="article__header">
+						Podpięcie DOM do html / JS do elementu HTML
+					</h3>
 					<p class="article__text">
 						aby podpięć js pod wybrany element html, można skorzystać m.in. z
 						metody querySelector
@@ -120,7 +122,7 @@
 					<div class="code">
 						<code class="code__text">
 							<span class="code__text--property">const</span>
-							<span class="code__text--plain">heading</span>
+							<span class="code__text--plain">welcomeHeader</span>
 							<span class="code__text--tag">=</span>
 							<span class="code__text--plain">document.</span
 							><span class="code__text--property">querySelector</span
@@ -130,8 +132,8 @@
 						</code>
 					</div>
 					<p class="article__text">
-						W ten sposób przypisujemy stałej heading, element html wskazany przy
-						pomocy klasy
+						W ten sposób przypisujemy zmiennej welcomeHeading, element html
+						wskazany przy pomocy klasy
 						<span class="code__text--atribute">welcome__header--js</span>.
 					</p>
 					<p class="article__text">
@@ -149,10 +151,20 @@
 						Za pomocą tej metody, możemy podmienić treść wskazanego wcześniej
 						elementu.
 					</p>
-        <div class="code">
-<code class="code__text">
-</code>
-</div>
+					<div class="code">
+						<code class="code__text"
+							><span class="code__text--plain">welcomeHeader.innerHTML </span
+							><span class="code__text--tag">=</span
+							><span class="code__text--atribute">
+								'Miło że wpadłaś / wpadłeś :)'</span
+							><span class="code__text--plain">;</span>
+						</code>
+					</div>
+					<p class="article__text">
+						Ta komenda dodaje na stronę podany string, w podpiętym wyżej
+						miejscu, poprzez przypisanie zmiennej nowej wartości, widocznej w
+						DOM ale nie w HTML
+					</p>
 				</article>
 			</section>
 		</main>
