@@ -48,6 +48,10 @@ a {
   margin: 16px auto;
 }
 
+.article-js__image--function {
+  width: 900px;
+}
+
 .article__text--image-descryption {
   text-align: center;
 }
@@ -78,6 +82,11 @@ a {
   text-align: center;
 }
 
+.code__text--js {
+  text-align: left;
+  padding-left: 3em;
+}
+
 .code__text--plain {
   color: #fff0f5;
 }
@@ -96,6 +105,10 @@ a {
 
 .code__text--property {
   color: #24ccf6;
+}
+
+.code__text--parameter {
+  color: #b97f00;
 }
 
 .topbar {

@@ -16,3 +16,7 @@ console.log(welcomeHeader);
 welcomeHeader.innerHTML = 'Miło że wpadłaś / wpadłeś :)';
 
 console.log(welcomeHeader);
+
+function calculate(mynumber) {
+  return myNumber*7;
+}
