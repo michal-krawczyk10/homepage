@@ -1,124 +1,139 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Co ten JS?</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Co ten JS?</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	</head>
 
-  <body>
-    <header>
-      <nav class="topbar">
-        <ul class="topbar__navigation">
-          <li class="topbar__navigation--button">
-            <a href="../index.html">Główna</a>
-          </li>
-          <li class="topbar__navigation--button">
-            <a href="html.html">html</a>
-          </li>
-          <li class="topbar__navigation--button"><a href="css.html">css</a></li>
-          <li class="topbar__navigation--button"><a href="js.html">js</a></li>
-          <li class="topbar__navigation--button">
-            <a href="terminalIGit.html">git i terminal</a>
-          </li>
-          <li class="topbar__navigation--button">
-            <a href="examples.html">przykłady</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section>
-        <article class="welcome">
-          <h1 class="welcome__header">
-            Tu będzie magia js'a, którego jak narazie nie kumam.
-          </h1>
-        </article>
-        <img
-          src="/../img/dziwny.png"
-          alt="lisie sprawy"
-          class="welcome__image"
-        />
-      </section>
-      <section>
-        <article class="article">
-          <h2 class="article__header">Typy danych</h2>
-          <p class="article__text">zmienna</p>
-          <p class="article__text">
-            Zmienna to nie jest wartość, zmienna tylko wskazuje na jakąś
-            wartość!
-          </p>
-          <p class="article__text">
-            let vs const vs var<br />
-            var jest uniwersalne, obecnie się od niej odchodzi;
-            <br />
-            const to zmienna, które ma stałe połączenie z wartością i się nie
-            zmienia (od constant);<br />
-            let - zmienna, której wartość można zmienić
-          </p>
-          <p class="article__text">
-            Zmienną definiuje się tylko raz. W zmiennej może być cokolwiek.
-          </p>
+	<body>
+		<header>
+			<nav class="topbar">
+				<ul class="topbar__navigation">
+					<li class="topbar__navigation--button">
+						<a href="../index.html">Główna</a>
+					</li>
+					<li class="topbar__navigation--button">
+						<a href="html.html">html</a>
+					</li>
+					<li class="topbar__navigation--button"><a href="css.html">css</a></li>
+					<li class="topbar__navigation--button"><a href="js.html">js</a></li>
+					<li class="topbar__navigation--button">
+						<a href="terminalIGit.html">git i terminal</a>
+					</li>
+					<li class="topbar__navigation--button">
+						<a href="examples.html">przykłady</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<section>
+				<article class="welcome">
+					<h1 class="welcome__header">
+						Tu będzie magia js'a, którego jak narazie nie kumam.
+					</h1>
+				</article>
+				<img
+					src="/../img/dziwny.png"
+					alt="lisie sprawy"
+					class="welcome__image"
+				/>
+			</section>
+			<section>
+				<article class="article">
+					<h2 class="article__header">Typy danych</h2>
+					<p class="article__text">zmienna</p>
+					<p class="article__text">
+						Zmienna to nie jest wartość, zmienna tylko wskazuje na jakąś
+						wartość!
+					</p>
+					<p class="article__text">
+						let vs const vs var<br />
+						var jest uniwersalne, obecnie się od niej odchodzi;
+						<br />
+						const to zmienna, które ma stałe połączenie z wartością i się nie
+						zmienia (od constant);<br />
+						let - zmienna, której wartość można zmienić
+					</p>
+					<p class="article__text">
+						Zmienną definiuje się tylko raz. W zmiennej może być cokolwiek.
+					</p>
 
-          <p class="article__text">
-            Typy proste w JS (primitives)
-          </p>
+					<p class="article__text">
+						Typy proste w JS (primitives)
+					</p>
 
-          <p class="article__text">String - tekst, otaczany 'apostrofami'</p>
-          <p class="article__text">number - wiadomo</p>
+					<p class="article__text">String - tekst, otaczany 'apostrofami'</p>
+					<p class="article__text">number - wiadomo</p>
 
-          <p class="article__text">boolean - wartość: true lub false</p>
-          <p class="article__text">
-            null - wartość niezdefiniowana celowo, która gdzieś później się
-            pojawi, lub musimy zaznaczyć że ta zmienna istnieje, ale nie znamy
-            jej wartości. Wskazuje na 'nic'
-          </p>
-          <p class="article__text">
-            undefined - zmienna niezdefiniowana, do której się próbujemy dostać
-          </p>
-          <p class="article__text">
-            Można sprawdzić w konsoli, jakiego typu jest zmienna, za pomocą
-            wyrażenia, przydaje się do sprawdzenia czy zmienna jest
-            zdefiniowana<br />
-            typeof nazwaZmiennej
-          </p>
+					<p class="article__text">boolean - wartość: true lub false</p>
+					<p class="article__text">
+						null - wartość niezdefiniowana celowo, która gdzieś później się
+						pojawi, lub musimy zaznaczyć że ta zmienna istnieje, ale nie znamy
+						jej wartości. Wskazuje na 'nic'
+					</p>
+					<p class="article__text">
+						undefined - zmienna niezdefiniowana, do której się próbujemy dostać
+					</p>
+					<p class="article__text">
+						Można sprawdzić w konsoli, jakiego typu jest zmienna, za pomocą
+						wyrażenia, przydaje się do sprawdzenia czy zmienna jest
+						zdefiniowana<br />
+						typeof nazwaZmiennej
+					</p>
 
-          <p class="article__text">
-            immutability - 'niezmienność', 'niemutowalność'
-          </p>
-          <p class="article__text">
-            Nie możemy zmieniac wartości primitive values w JS, wartości
-            zmiennych istnieją same w sobie, a my tylko zmieniamy połączenia
-            między nimi i do nich.<br />
-            let x = 10, nie oznacza, że x jest równe 10, tylko, że x wskazuje na
-            10. 10 istnieje niezależnie od x.
-          </p>
-        </article>
-      </section>
-      <section>
-        <article class="article">
-          <h2 class="article__header">DOM - Document Object Model</h2>
-          <p class="article__text">
-            DOM to "złożony w przeglądarce HTML"<br />
-            JS może go modyfikować.<br />
-            funkcja querySelector zwraca node (węzeł) z Html-a, selektor
-            zapisywany jest zgodnie z css<br />
-            korzystając z BEM - tworzymy dodatkową klasę z modyfikatorem --js,
-            ułatwia to identyfikację i usuwa potencjalne problemy<br />
-          </p>
-        </article>
-      </section>
-      <section>
-        <article class="article">
-          <h2 class="article__header">metody JS</h2>
-          <h3 class="article__header--subheader">Podpięcie DOM do html</h3>
-          <p></p>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      tu będzie jakaś stopka
-    </footer>
-  </body>
+					<p class="article__text">
+						immutability - 'niezmienność', 'niemutowalność'
+					</p>
+					<p class="article__text">
+						Nie możemy zmieniac wartości primitive values w JS, wartości
+						zmiennych istnieją same w sobie, a my tylko zmieniamy połączenia
+						między nimi i do nich.<br />
+						let x = 10, nie oznacza, że x jest równe 10, tylko, że x wskazuje na
+						10. 10 istnieje niezależnie od x.
+					</p>
+				</article>
+			</section>
+			<section>
+				<article class="article">
+					<h2 class="article__header">DOM - Document Object Model</h2>
+					<p class="article__text">
+						DOM to "złożony w przeglądarce HTML"<br />
+						JS może go modyfikować.<br />
+						funkcja querySelector zwraca node (węzeł) z Html-a, selektor
+						zapisywany jest zgodnie z css<br />
+						korzystając z BEM - tworzymy dodatkową klasę z modyfikatorem --js,
+						ułatwia to identyfikację i usuwa potencjalne problemy<br />
+					</p>
+				</article>
+			</section>
+			<section class="section">
+				<h2 class="section__header">Metody JS</h2>
+				<article class="article">
+					<h3 class="article__header">Podpięcie DOM do html</h3>
+					<p class="article__text">
+						aby podpięć js pod wybrany element html, można skorzystać m.in. z
+						metody querySelector
+					</p>
+					<div class="code">
+						<code class="code__text">
+							<span class="code__text--property">const</span>
+							<span class="code__text--plain">heading</span>
+							<span class="code__text--tag">=</span>
+							<span class="code__text--plain">document.</span
+							><span class="code__text--property">querySelector</span
+							><span class="code__text--plain">(</span
+							><span class="code__text--atribute">'welcome__header--js'</span
+							><span class="code__text--plain">);</span>
+						</code>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			tu będzie jakaś stopka
+		</footer>
+	</body>
 </html>
