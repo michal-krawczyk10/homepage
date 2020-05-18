@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pro tips</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro tips</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-</head>
+	<body>
+		<header>
+			<nav class="topbar">
+				<ul class="topbar__navigation">
+					<li class="topbar__navigation--button">
+						<a href="../index.html">Główna</a>
+					</li>
+					<li class="topbar__navigation--button">
+						<a href="html.html">html</a>
+					</li>
+					<li class="topbar__navigation--button"><a href="css.html">css</a></li>
+					<li class="topbar__navigation--button"><a href="js.html">js</a></li>
+					<li class="topbar__navigation--button">
+						<a href="terminalIGit.html">git i terminal</a>
+					</li>
+					<li class="topbar__navigation--button">
+						<a href="examples.html">przykłady</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<section>
+				<article class="welcome">
+					<h1 class="welcome__header">
+						Tu będą przykłady różnych kodów, spis treści itd
+					</h1>
+				</article>
+				<img
+					src="/../img/aw fish.jpg"
+					alt="aw fish"
+					class="welcome__image welcome__image--aw-fish"
+				/>
+			</section>
+			<section>
+				<article class="article">
+					<h2 class="article__header">Przykłady różnych rozwiązań</h2>
+				</article>
+				<article class="article">
+					<h2 class="article__header">stopka</h2>
+					<p class="article__text">
+						Żeby stopka została na dole strony, tag main powinien dostać
+						klasę<br /><br />
+						min-height: calc(100vh - (wysokość stopki + wysokość nagłówka + ew.
+						margin));<br /><br />
+						w ten sposób, stopka zawsze będzie na namym dole, bez względu na
+						ilość treści na stronie
+					</p>
+				</article>
+			</section>
+		</main>
 
-<body>
-    <header>
-        <nav class="topbar">
-            <ul class="topbar__navigation">
-                <li class="topbar__navigation--button"><a href="../index.html">Główna</a></li>
-                <li class="topbar__navigation--button"><a href="html.html">html</a></li>
-                <li class="topbar__navigation--button"><a href="css.html">css</a></li>
-                <li class="topbar__navigation--button"><a href="js.html">js</a></li>
-                <li class="topbar__navigation--button"><a href="terminalIGit.html">git i terminal</a></li>
-                <li class="topbar__navigation--button"><a href="examples.html">przykłady</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <section>
-            <article class="welcome">
-                <h1 class="welcome__header">Tu będą przykłady różnych kodów, spis treści itd</h1>
-            </article>
-            <img src="/../img/aw fish.jpg" alt="aw fish" class="welcome__image welcome__image--aw-fish">
-        </section>
-        <section>
-            <article class="article">
-                <h2 class="article__header">Przykłady różnych rozwiązań</h2>
-            </article>
-            <article class="article">
-                <h2 class="article__header">stopka</h2>
-                <p class="article__text">Żeby stopka została na dole strony, tag main powinien dostać klasę<br><br>
-                min-height: calc(100vh - (wysokość stopki + wysokość nagłówka + ew. margin));<br><br>
-                w ten sposób, stopka zawsze będzie na namym dole, bez względu na ilość treści na stronie
-                </p>
-                 
-            </article>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        tu będzie jakaś stopka
-    </footer>
-</body>
+		<footer class="footer">
+			tu będzie jakaś stopka
+		</footer>
+	</body>
 </html>
