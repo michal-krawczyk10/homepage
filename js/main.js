@@ -9,4 +9,10 @@ console.log(age);
 
 console.log(`hej, mam na imię ${name} i mam ${age} lata`);
 
-const heading = document.querySelector('welcome__header--js');
+const welcomeHeader = document.querySelector('.welcome__header--js');
+
+console.log(welcomeHeader);
+
+welcomeHeader.innerHTML = 'Miło że wpadłaś / wpadłeś :)';
+
+console.log(welcomeHeader);
