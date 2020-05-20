@@ -9,14 +9,18 @@ $codeColor4: #ffd700;
 $codeColor5: #24ccf6;
 $codeColor6: #b97f00;
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+*, *:before, *:after {
+	box-sizing: inherit;
 	text-decoration: none;
+}
+
+html {
+	box-sizing: border-box;
 	font-family: monospace;
 }
-body {
+
+.page {
+	margin: 0;
 	background-color: $color1;
 	color: $color2;
 }
@@ -91,7 +95,7 @@ a {
 	line-height: 1.5;
 	text-align: center;
 }
-.code__text--js {
+.code__text--left {
 text-align: left;
 padding-left: 3em;}
 .code__text--plain {
@@ -114,12 +118,15 @@ padding-left: 3em;}
 }
 
 .topbar {
+	position: fixed;
+	top: 0;
 	width: 100%;
 	height: 48px;
 	background-color: $color3;
 	color: $color1;
 }
 .topbar__navigation {
+	margin: 0;
 	display: flex;
 	justify-content: flex-end;
 	flex-flow: row wrap;
@@ -141,7 +148,7 @@ padding-left: 3em;}
 .main {
 	padding: 1em 3em;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 48px auto 0;
 	min-height: calc(100vh - 94px);
 }
 

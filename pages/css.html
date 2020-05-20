@@ -1,224 +1,259 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Co ten CSS?</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <nav class="topbar">
-        <ul class="topbar__navigation">
-          <li class="topbar__navigation--button">
-            <a href="../index.html">Główna</a>
-          </li>
-          <li class="topbar__navigation--button">
-            <a href="html.html">html</a>
-          </li>
-          <li class="topbar__navigation--button"><a href="css.html">css</a></li>
-          <li class="topbar__navigation--button"><a href="js.html">js</a></li>
-          <li class="topbar__navigation--button">
-            <a href="terminalIGit.html">git i terminal</a>
-          </li>
-          <li class="topbar__navigation--button">
-            <a href="examples.html">przykłady</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section>
-        <article class="welcome">
-          <h1 class="welcome__header">tu żyją css'owe smoki</h1>
-          <img
-            src="/../img/kimono.png"
-            alt="kwiatki z kimono"
-            class="welcome__image"
-          />
-        </article>
-      </section>
-      <section>
-        <article class="article">
-          <h2 class="article__header">Klasy</h2>
-          <p class="article__text">Zasada kebab-case</p>
-        </article>
-      </section>
-      <section>
-        <article class="article">
-          <h2 class="article__header">Własności klas i ich wartości</h2>
-          <h3 class="article__header--subheader">
-            Stylowanie wielkości i położenia elementów elementów
-          </h3>
-          <p class="article__text code__text--property">display</p>
-          <p class="article__text">
-            <span class="code__text--property">block</span> / elementy ustawiają
-            się jeden pod drugim
-          </p>
-          <p class="article__text">
-            <span class="code__text--property">inline</span> / elementy
-            ustawiają się obok siebie
-          </p>
-          <p class="article__text">
-            inline-block / element zachowuje się jak liniowy, ale można mu
-            nadawać własności blokowe, np width/height
-          </p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Co ten CSS?</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page">
+		<header>
+			<nav class="topbar">
+				<ul class="topbar__navigation">
+					<li class="topbar__navigation--button">
+						<a href="../index.html">Główna</a>
+					</li>
+					<li class="topbar__navigation--button">
+						<a href="html.html">html</a>
+					</li>
+					<li class="topbar__navigation--button"><a href="css.html">css</a></li>
+					<li class="topbar__navigation--button"><a href="js.html">js</a></li>
+					<li class="topbar__navigation--button">
+						<a href="terminalIGit.html">git i terminal</a>
+					</li>
+					<li class="topbar__navigation--button">
+						<a href="examples.html">przykłady</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<section>
+				<article class="welcome">
+					<h1 class="welcome__header">tu żyją css'owe smoki</h1>
+					<img
+						src="/../img/kimono.png"
+						alt="kwiatki z kimono"
+						class="welcome__image"
+					/>
+				</article>
+			</section>
+			<section>
+				<article class="article">
+					<h2 class="article__header">Klasy</h2>
+					<p class="article__text">Zasada kebab-case</p>
+				</article>
+			</section>
+			<section>
+				<article class="article">
+					<h2 class="article__header">Własności klas i ich wartości</h2>
+					<h3 class="article__header--subheader">
+						Stylowanie wielkości i położenia elementów elementów
+					</h3>
+					<p class="article__text code__text--property">display</p>
+					<p class="article__text">
+						<span class="code__text--property">block</span> / elementy ustawiają
+						się jeden pod drugim
+					</p>
+					<p class="article__text">
+						<span class="code__text--property">inline</span> / elementy
+						ustawiają się obok siebie
+					</p>
+					<p class="article__text">
+						inline-block / element zachowuje się jak liniowy, ale można mu
+						nadawać własności blokowe, np width/height
+					</p>
 
-          <p class="article__text">
-            width/height / nie działa w display: inline
-          </p>
-          <p class="article__text">
-            max-width/height / height rzadko się korzysta
-          </p>
-          <p class="article__text">min-width/height</p>
-          <p class="article__text">overflow / wpływa na treść wobec boxa</p>
-          <p class="article__text">visible / domyślna wartość</p>
-          <p class="article__text">
-            hidden / chowa treść jeśli jest jej za dużo
-          </p>
-          <p class="article__text">auto - dodaje scroll w elemencie</p>
+					<p class="article__text">
+						width/height / nie działa w display: inline
+					</p>
+					<p class="article__text">
+						max-width/height / height rzadko się korzysta
+					</p>
+					<p class="article__text">min-width/height</p>
+					<p class="article__text">overflow / wpływa na treść wobec boxa</p>
+					<p class="article__text">visible / domyślna wartość</p>
+					<p class="article__text">
+						hidden / chowa treść jeśli jest jej za dużo
+					</p>
+					<p class="article__text">auto - dodaje scroll w elemencie</p>
 
-          <h3 class="article__header--subheader">
-            box model (do zrobienia graficzka, z hooverami itp)
-          </h3>
-          <p class="article__text">
-            wszystkie własności css, które mają kierunki działają na zasadzie
-            zegarka, wartości można podawać w kolejności top - right - bottom -
-            left.
-          </p>
-          <p class="article__text">padding / wewnętrzny margines</p>
-          <p class="article__text">
-            padding-top/left/right/buttom: (jednostka)
-          </p>
+					<h3 class="article__header--subheader">
+						box model (do zrobienia graficzka, z hooverami itp)
+					</h3>
+					<p class="article__text">
+						wszystkie własności css, które mają kierunki działają na zasadzie
+						zegarka, wartości można podawać w kolejności top - right - bottom -
+						left.
+					</p>
+					<p class="article__text">padding / wewnętrzny margines</p>
+					<p class="article__text">
+						padding-top/left/right/buttom: (jednostka)
+					</p>
 
-          <p class="article__text">
-            border / obramowanie, też działa zasada zegarka
-          </p>
-          <p class="article__text">
-            zapis skrótowy:<br />
-            border: 10px solid red (szerokość, styl, kolor)
-          </p>
+					<p class="article__text">
+						border / obramowanie, też działa zasada zegarka
+					</p>
+					<p class="article__text">
+						zapis skrótowy:<br />
+						border: 10px solid red (szerokość, styl, kolor)
+					</p>
 
-          <p class="article__text">
-            border-radius / zaokrąglenie granic. wartość w jednostkach, np.
-            20px. 50% - daje okrąg.
-          </p>
-          <p class="article__text">
-            margin / margines, odsuwa element od innych elementów. Nie jest jego
-            częścią. Zapis taki sam jak w paddingach. Działa tylko przy
-            elementach blokowych. Marginesy różnych elementów się sumują
-          </p>
-          <p class="article__text">
-            auto / jeśli element ma display: block && ustaloną szerokość,
-            margin: __px auto wyśrodkuje element w poziomie nadając automatyczne
-            równe marginesy po obu stronach.
-          </p>
+					<p class="article__text">
+						border-radius / zaokrąglenie granic. wartość w jednostkach, np.
+						20px. 50% - daje okrąg.
+					</p>
+					<p class="article__text">
+						margin / margines, odsuwa element od innych elementów. Nie jest jego
+						częścią. Zapis taki sam jak w paddingach. Działa tylko przy
+						elementach blokowych. Marginesy różnych elementów się sumują
+					</p>
+					<p class="article__text">
+						auto / jeśli element ma display: block && ustaloną szerokość,
+						margin: __px auto wyśrodkuje element w poziomie nadając automatyczne
+						równe marginesy po obu stronach.
+					</p>
 
-          <p class="article__text">box-sizing <b>grafika</b>/</p>
-          <p class="article__text">
-            content-box / domyślna wartość, mówi, że definiowana
-            szerokośc/wysokość, odnosi się do kontentu, nie wpływa na padding,
-            border i margines
-          </p>
-          <p class="article__text">
-            border-box / wlicza do wielkości elementu, także padding i border.
-            dzięki temu łatwiej można nadać elementowi rządany rozmiar
-          </p>
+					<p class="article__text">box-sizing <b>grafika</b>/</p>
+					<p class="article__text">
+						content-box / domyślna wartość, mówi, że definiowana
+						szerokośc/wysokość, odnosi się do kontentu, nie wpływa na padding,
+						border i margines
+					</p>
+					<p class="article__text">
+						border-box / wlicza do wielkości elementu, także padding i border.
+						dzięki temu łatwiej można nadać elementowi rządany rozmiar
+					</p>
 
-          <p class="article__text">position</p>
-          <p class="article__text">position: static /domyślna wartość</p>
-          <p class="article__text">
-            position: relative / sprawia,że element staje się domyślny dla
-            podelementów i można je pozycjonować wg. niego za pomocą kolejnej
-            wartości
-          </p>
-          <p class="article__text">
-            position: absolute / pozycjonuje element względem elementu relative,
-            na zasadzie układu współrzędnych. Jeśli nie ma elementu relative,
-            pozycjonuje od body. Należy mu nadać kolejne własności:
-          </p>
-          <p class="article__text">
-            top, right, bottom, left <br />
-            przykład<br />
-            top: __px; ustawia element o pozycji absolute o wskazaną odkległość
-            od górnej krawędzie elementu relative.
-          </p>
+					<p class="article__text">position</p>
+					<p class="article__text">position: static /domyślna wartość</p>
+					<p class="article__text">
+						position: relative / sprawia,że element staje się domyślny dla
+						podelementów i można je pozycjonować wg. niego za pomocą kolejnej
+						wartości
+					</p>
+					<p class="article__text">
+						position: absolute / pozycjonuje element względem elementu relative,
+						na zasadzie układu współrzędnych. Jeśli nie ma elementu relative,
+						pozycjonuje od body. Należy mu nadać kolejne własności:
+					</p>
+					<p class="article__text">
+						top, right, bottom, left <br />
+						przykład<br />
+						top: __px; ustawia element o pozycji absolute o wskazaną odkległość
+						od górnej krawędzie elementu relative.
+					</p>
 
-          <p class="article__text">
-            z-index / definiuje warstwy/trzeci wymiar. Gdy elementy nachodzą na
-            siebie, widoczny jest ten o wyższej wartości z-index
-          </p>
+					<p class="article__text">
+						z-index / definiuje warstwy/trzeci wymiar. Gdy elementy nachodzą na
+						siebie, widoczny jest ten o wyższej wartości z-index
+					</p>
 
-          <p class="article__text">
-            position: fixed <br />
-            pozycjonuje element na stałe w jednym miejscu viewportu, niezależnie
-            od innych elementów
-          </p>
-          <p class="article__text">
-            position: sticky / przykleja się do wyznaczonego miejsca i pozostaje
-            w nim dopuki parent-element jest widoczny. żeby zadziałał, rodzic
-            nie może mieć overflow'a.
-          </p>
+					<p class="article__text">
+						position: fixed <br />
+						pozycjonuje element na stałe w jednym miejscu viewportu, niezależnie
+						od innych elementów
+					</p>
+					<p class="article__text">
+						position: sticky / przykleja się do wyznaczonego miejsca i pozostaje
+						w nim dopuki parent-element jest widoczny. żeby zadziałał, rodzic
+						nie może mieć overflow'a.
+					</p>
 
-          <p class="article__text">float</p>
-          <p class="article__text">przyjmuje wartości jak absolut (left itd)</p>
+					<p class="article__text">float</p>
+					<p class="article__text">przyjmuje wartości jak absolut (left itd)</p>
+					<p class="article__text">
+						nie budujemy nim layoutów. służy do wstawiania elementu, który
+						będzie "opłynięty" treścią rodzica.
+					</p>
+					<p class="article__text">
+						clear: left, right, both, dopasowuje wielkośc rodzica, jeśli float
+						poza niego wystaje
+					</p>
+					<p class="article__text">
+						overflow:hidden / chowa float pod krawędzią rodzica, jeśli float
+						chce wystawać poza
+					</p>
+					<p class="article__text">
+						<span class="code__text--property">inherit</span> - wartość, np.
+						własności <span class="code__text--property">color</span>, która
+						przypisuje elementowi wartość elementu wyżej - rodzica
+					</p>
+				</article>
+				<article class="article">
+					<h2 class="article__header">Jednostki wielkości</h2>
+					<p class="article__text">
+						0 - zawsze jest zerem, można dopisać po nim dowolną jednostkę, ale
+						nie trzeba
+					</p>
+					<p class="article__text">px - piksel</p>
+					<p class="article__text">
+						% - procenty liczone są względem elementu rodzica
+					</p>
+					<p class="article__text">vw - procent szerokości viewportu (okna)</p>
+					<p class="article__text">
+						vh - procent wysokości viewportu. używane często jest 100vh
+					</p>
+				</article>
+				<article class="article">
+					<h2 class="article__header">BEM - Block Elemenent Modifier</h2>
+					<p class="article__text">
+						Standard nazywania klass.<br />
+						block__element--modifier<br />
+						Przykład:<br />
+						<img
+							src="/../img/bem example.jpg"
+							alt="obrazek ilustrujący BEM"
+							class="article__image article__image--bem"
+						/>
+						<img
+							src="/../img/bem example2.jpg"
+							alt="obrazek ilustujący BEM"
+							class="article__image article__image--bem"
+						/>
+						Podsumowując, tworząc BEM<br />
+						- szukamy elementów na stronie i dzielimy ją na bloki<br />
+						- myślimy o elementach składniowych / robimy analizę-selekcję<br />
+						- tworzymy dwie klasy jeśli element ma modyfikator. W modyfikatrorze
+						zmieniamy tylko unikalne dla niego wartości, nie przypisujemy rzeczy
+						z klasy bazowej.
+					</p>
+				</article>
+				<article class="article">
+					<h2 class="article__header">reset i normalizacja</h2>
+					<p class="article__text">
+						Reset polega na usunięciu domyślych styli przeglądarki, przy użyciu
+						selektora <span class="code__text--tag">*</span>.<br />np:
+					</p>
+					<div class="code">
+						<code class="code__text code__text--left">
+							<span class="code__text--tag">*</span>
+							<span class="code__text--plain"
+								>{<br />margin: 0;<br />padding: 0;<br />box-sizing:
+								border-box;<br />text-decoration: none;<br />font-family:
+								monospace;<br />}</span
+							></code
+						>
+					</div>
+					<p class="article__text">
+						Normalizacja, to dołączenie pliku normalize.css, który naprawia
+						domyślne stylowania różnych przeglądarek. Można go nadpisywać.
+					</p>
           <p class="article__text">
-            nie budujemy nim layoutów. służy do wstawiania elementu, który
-            będzie "opłynięty" treścią rodzica.
+            Lepiej nie korzystać z czystego resetu. Najlepszą metodą jest
+            mieszanie resetu z normalize, w praktyce ograniczamy reset.
           </p>
-          <p class="article__text">
-            clear: left, right, both, dopasowuje wielkośc rodzica, jeśli float
-            poza niego wystaje
-          </p>
-          <p class="article__text">
-            overflow:hidden / chowa float pod krawędzią rodzica, jeśli float
-            chce wystawać poza
-          </p>
-          <p class="article__text"><span class="code__text--property">inherit</span> - wartość, np. własności <span class="code__text--property">color</span>, która przypisuje elementowi wartość elementu wyżej - rodzica</p>
-        </article>
-        <article class="article">
-          <h2 class="article__header">Jednostki wielkości</h2>
-          <p class="article__text">
-            0 - zawsze jest zerem, można dopisać po nim dowolną jednostkę, ale
-            nie trzeba
-          </p>
-          <p class="article__text">px - piksel</p>
-          <p class="article__text">
-            % - procenty liczone są względem elementu rodzica
-          </p>
-          <p class="article__text">vw - procent szerokości viewportu (okna)</p>
-          <p class="article__text">
-            vh - procent wysokości viewportu. używane często jest 100vh
-          </p>
-        </article>
-        <article class="article">
-          <h2 class="article__header">BEM - Block Elemenent Modifier</h2>
-          <p class="article__text">
-            Standard nazywania klass.<br />
-            block__element--modifier<br />
-            Przykład:<br />
-            <img
-              src="/../img/bem example.jpg"
-              alt="obrazek ilustrujący BEM"
-              class="article__image article__image--bem"
-            />
-            <img
-              src="/../img/bem example2.jpg"
-              alt="obrazek ilustujący BEM"
-              class="article__image article__image--bem"
-            />
-            Podsumowując, tworząc BEM<br />
-            - szukamy elementów na stronie i dzielimy ją na bloki<br />
-            - myślimy o elementach składniowych / robimy analizę-selekcję<br />
-            - tworzymy dwie klasy jeśli element ma modyfikator. W modyfikatrorze
-            zmieniamy tylko unikalne dla niego wartości, nie przypisujemy rzeczy
-            z klasy bazowej.
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      tu będzie jakaś stopka
-    </footer>
-  </body>
+					<div class="code">
+            <code class="code__text code__text--left"
+              > <span class="code__text--tag">*</span>, <span class="code__text--tag">*</span>:before, <span class="code__text--tag">*</span>:after {<br>box-sizing: inherit;<br>}<br><span class="code__text--tag">html</span> {<br>box-sizing: border-box;<br>
+              }</code
+            >
+          </div>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			tu będzie jakaś stopka
+		</footer>
+	</body>
 </html>
