@@ -10,8 +10,11 @@ html {
 
 .page {
   margin: 0;
+  background-attachment: scroll;
   background-color: #312f49;
+  background: linear-gradient(90deg, #312f49 70%, #ffc353 95%);
   color: #fff0f5;
+  min-height: 100vh;
 }
 
 a {
