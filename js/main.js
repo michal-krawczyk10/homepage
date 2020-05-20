@@ -15,8 +15,8 @@ console.log(welcomeHeader);
 
 welcomeHeader.innerHTML = 'Miło że wpadłaś / wpadłeś :)';
 
-console.log(welcomeHeader);
+function welcome()}
 
-function calculate(mynumber) {
-  return myNumber*7;
-}
+<h1 class="welcome__header">Mam na imię Michał i powoli ogarniam magię frontendu.</h1>
+<p class="welcome__text">Dziś mamy: data, co oznacza, że mam lata</p> 
+
