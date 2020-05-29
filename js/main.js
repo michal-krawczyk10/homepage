@@ -13,7 +13,7 @@ const welcomeHeader = document.querySelector(".welcome__header--js");
 
 console.log(welcomeHeader);
 
-welcomeHeader.innerHTML = "Miło że wpadłaś / wpadłeś :)";
+welcomeHeader.innerHTML = "Cześć, miło że wpadłaś / wpadłeś :)";
 
 function createContent(querySelectorContent, content) {
 	const element = document.querySelector(querySelectorContent);
@@ -25,10 +25,16 @@ const myself = {
 	name: "Michał",
 };
 
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+let today = day + '/' + month + '/' + year;
 
 createContent(
-	".welcome__header--js",
-	`Hej, mam na imię ${'Michał'}, dziś jest data i lecimy z frontendem`
+	".welcome__header--sub--js",
+	`Mam na imię ${myself.name}, dziś jest ${today}, a to jest moja strona "robocza"`
 );
 
-const date = console.log(myself);
+
