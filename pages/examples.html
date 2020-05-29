@@ -56,6 +56,52 @@
 						ilość treści na stronie
 					</p>
 				</article>
+				<article class="article">
+					<h2 class="article__header">funkcja wrzucająca content na stronę</h2>
+					<p class="article__text">
+						funkcja najpierw wybiera z html element wskazany atrybutem, a
+						następnie za pomocą innerHTML wrzuca wskazany kontent we wskazanym
+						elemencie
+					</p>
+					<div class="code">
+						<code class="code__text code__text--left"
+							>function createContent(querySelectorContent, content) {<br />const
+							element = document.querySelector(querySelectorContent);<br />
+							element.innerHTML = content;<br />}</code
+						>
+					</div>
+					<p class="article__text">
+						wywołując ją, nadajemy jako pierwszy atrybut rządany element (np. jakąś
+						klasę), jako drugi oczekiwany kontent
+					</p>
+					<div class="code">
+						<code class="code__text code__text--left">
+							createContent( ".welcome__header--sub--js", `tekst, który pojawi się we wskazanym miejscu`);
+						</code>
+					</div>
+				</article>
+				<article class="article">
+					<h2 class="article__header">dzisiejsza data za pomocą js</h2>
+					<p class="article__text">
+						najpierw tworzymy datę i definiujemy jej format
+					</p>
+					<div class="code">
+						<code class="code__text code__text--left">
+							let date = new Date();<br />let day = date.getDate();<br />let
+							month = date.getMonth() + 1;<br />let year =
+							date.getFullYear();<br />let today = day + '/' + month + '/' +
+							year
+						</code>
+					</div>
+					<p class="article__text">
+						potem wrzucamy ją na stronę np. wykorzystując opisaną wcześniej funkcję do podmiany treści
+					</p>
+					<div class="code">
+						<code class="code__text code__text--left">
+							createContent(".jakas__klasa--js", '"dziś jest ${today}';
+						</code>
+					</div>
+				</article>
 			</section>
 		</main>
 
