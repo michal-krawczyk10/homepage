@@ -1,4 +1,4 @@
-alert("hejka");
+
 console.log("hej hej");
 
 const name = "Michał";

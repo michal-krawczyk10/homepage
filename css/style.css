@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   text-decoration: none;
 }
@@ -9,10 +11,13 @@ html {
 }
 
 .page {
+  display: grid;
+  grid-template-areas: "header header" "article aside" "footer footer";
+  grid-template-columns: 1fr 200px;
   margin: 0;
   background-attachment: scroll;
   background-color: #312f49;
-  background: linear-gradient(90deg, #312f49 10%, #ffc353 95%);
+  background-image: linear-gradient(90deg, #312f49 10%, #ffc353 95%);
   color: #fff0f5;
   min-height: 100vh;
 }
@@ -118,6 +123,7 @@ a {
 }
 
 .topbar {
+  grid-area: header;
   position: fixed;
   top: 0;
   width: 100%;
@@ -133,6 +139,7 @@ a {
   flex-flow: row wrap;
   padding: 0 16px 0 0;
   list-style-type: none;
+  align-items: center;
 }
 
 .topbar__navigation--button {
@@ -150,10 +157,16 @@ a {
 }
 
 .main {
+  grid-area: article;
   padding: 1em 3em;
   max-width: 1200px;
-  margin: 48px auto 0;
+  margin: 48px auto 30px;
   min-height: calc(100vh - 94px);
+}
+
+.aside {
+  grid-area: aside;
+  background-color: tomato;
 }
 
 .image {
@@ -163,8 +176,9 @@ a {
 }
 
 .footer {
+  grid-area: footer;
   font-size: 20px;
-  margin: 30px auto 0;
+  margin: 0 auto;
   background-color: #ffc353;
   color: #312f49;
   width: 100%;
@@ -203,6 +217,12 @@ a {
 
 .welcome__image--aw-fish {
   width: 200px;
+}
+
+@media screen and (max-width: 720px) {
+  .topbar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

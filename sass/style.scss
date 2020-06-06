@@ -9,7 +9,9 @@ $codeColor4: #ffd700;
 $codeColor5: #24ccf6;
 $codeColor6: #b97f00;
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 	text-decoration: none;
 }
@@ -20,10 +22,17 @@ html {
 }
 
 .page {
+	display: grid;
+	grid-template-areas: "header header" "article aside" "footer footer";
+	grid-template-columns: 1fr 200px;
 	margin: 0;
 	background-attachment: scroll;
 	background-color: $color1;
-	background: linear-gradient(90deg, rgba(49,47,73,1) 10%, rgba(255,195,83,1) 95%);
+	background-image: linear-gradient(
+		90deg,
+		rgba(49, 47, 73, 1) 10%,
+		rgba(255, 195, 83, 1) 95%
+	);
 	color: $color2;
 	min-height: 100vh;
 }
@@ -64,7 +73,7 @@ a {
 }
 
 .article-js__image--function {
-  width: 900px;
+	width: 900px;
 }
 
 .article__text--image-descryption {
@@ -88,7 +97,6 @@ a {
 	background-color: $color1a;
 	border-radius: 20px;
 	padding: 16px 16px;
-
 }
 .code__text {
 	display: block;
@@ -97,8 +105,9 @@ a {
 	text-align: center;
 }
 .code__text--left {
-text-align: left;
-padding-left: 3em;}
+	text-align: left;
+	padding-left: 3em;
+}
 .code__text--plain {
 	color: $codeColor3;
 }
@@ -119,6 +128,7 @@ padding-left: 3em;}
 }
 
 .topbar {
+	grid-area: header;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -133,6 +143,7 @@ padding-left: 3em;}
 	flex-flow: row wrap;
 	padding: 0 16px 0 0;
 	list-style-type: none;
+	align-items: center;
 }
 .topbar__navigation--button {
 	display: block;
@@ -147,10 +158,16 @@ padding-left: 3em;}
 	transition: 0.5s;
 }
 .main {
+	grid-area: article;
 	padding: 1em 3em;
 	max-width: 1200px;
-	margin: 48px auto 0;
+	margin: 48px auto 30px;
 	min-height: calc(100vh - 94px);
+}
+
+.aside {
+	grid-area: aside;
+	background-color: tomato;
 }
 
 .image {
@@ -160,8 +177,9 @@ padding-left: 3em;}
 }
 
 .footer {
+	grid-area: footer;
 	font-size: 20px;
-	margin: 30px auto 0;
+	margin: 0 auto;
 	background-color: $color3;
 	color: $color1;
 	width: 100%;
@@ -196,4 +214,10 @@ padding-left: 3em;}
 
 .welcome__image--aw-fish {
 	width: 200px;
+}
+
+@media screen and (max-width: 720px) {
+	.topbar {
+	display: none;
+	}
 }
