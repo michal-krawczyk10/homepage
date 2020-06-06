@@ -230,6 +230,9 @@ a {
     top: 16px;
     right: 16px;
     z-index: 100;
+    color: #312f49;
+    background: none;
+    border: none;
   }
   .topbar__navigation {
     background-color: inherit;
