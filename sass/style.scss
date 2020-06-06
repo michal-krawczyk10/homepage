@@ -219,9 +219,24 @@ a {
 	width: 200px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+
+	.topbar__hamburger {
+		display: block;
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		z-index: 100;
+	}
 	.topbar__navigation {
+	background-color: inherit;
+	display: flex;
+	flex-direction: column;
+}
+	.topbar__navigation--button {
+	width: 100%;	
+}
+	.topbar__navigation--toggle {
 		display: none;
 	}
-	.topbar__hamburger { display: inline;}
 }

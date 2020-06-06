@@ -1,4 +1,3 @@
-
 console.log("hej hej");
 
 const name = "Michał";
@@ -30,11 +29,16 @@ let day = date.getDate();
 let month = date.getMonth() + 1;
 let year = date.getFullYear();
 
-let today = day + '/' + month + '/' + year;
+let today = day + "/" + month + "/" + year;
 
 createContent(
 	".welcome__header--sub--js",
 	`Mam na imię ${myself.name}, dziś jest ${today}, a to jest moja strona "robocza"`
 );
 
+const hamburger = document.querySelector(".topbar__hamburger--js");
 
+hamburger.addEventListener("click", () => {
+	const navigation = document.querySelector(".topbar__navigation--js");
+	navigation.classList.toggle('topbar__navigation--toggle');
+});
