@@ -132,6 +132,10 @@ a {
   color: #312f49;
 }
 
+.topbar__hamburger {
+  display: none;
+}
+
 .topbar__navigation {
   margin: 0;
   display: flex;
@@ -220,8 +224,11 @@ a {
 }
 
 @media screen and (max-width: 720px) {
-  .topbar {
+  .topbar__navigation {
     display: none;
+  }
+  .topbar__hamburger {
+    display: inline;
   }
 }
 

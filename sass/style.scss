@@ -136,6 +136,9 @@ a {
 	background-color: $color3;
 	color: $color1;
 }
+.topbar__hamburger {
+	display: none;
+}
 .topbar__navigation {
 	margin: 0;
 	display: flex;
@@ -217,7 +220,8 @@ a {
 }
 
 @media screen and (max-width: 720px) {
-	.topbar {
-	display: none;
+	.topbar__navigation {
+		display: none;
 	}
+	.topbar__hamburger { display: inline;}
 }
