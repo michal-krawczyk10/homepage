@@ -33,6 +33,14 @@ a {
     font-size: 24px;
     padding: 16px 16px 0;
     text-align: left; }
+    .article__header:before {
+      content: "";
+      display: inline-block;
+      margin-right: 8px;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background: #ff0481; }
     .article__header--subheader {
       font-size: 22px;
       padding: 16px 24px 0; }
@@ -57,6 +65,11 @@ a {
   font-size: 24px;
   padding: 16px 16px 0;
   text-align: left; }
+  .section__header:before {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #ff0481; }
 
 .code {
   display: block;
@@ -170,6 +183,14 @@ a {
     font-size: 32px;
     padding: 16px;
     text-align: center; }
+    .welcome__header:before {
+      content: "";
+      display: inline-block;
+      margin-right: 8px;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background: #ff0481; }
   .welcome__text {
     font-size: 20px;
     line-height: 1.5;

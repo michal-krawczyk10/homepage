@@ -51,6 +51,15 @@ a {
 		font-size: 24px;
 		padding: 16px 16px 0;
 		text-align: left;
+		&:before {
+			content: "";
+			display: inline-block;
+			margin-right: 8px;
+			border-radius: 50%;
+			width: 12px;
+			height: 12px;
+			background: $codeColor1;
+		}
 		&--subheader {
 			font-size: 22px;
 			padding: 16px 24px 0;
@@ -83,6 +92,12 @@ a {
 	font-size: 24px;
 	padding: 16px 16px 0;
 	text-align: left;
+	&:before {
+		display: block;
+		width: 12px;
+		height: 12px;
+		background: $codeColor1;
+	}
 }
 
 .code {
@@ -216,6 +231,15 @@ a {
 		font-size: 32px;
 		padding: 16px;
 		text-align: center;
+		&:before {
+			content: "";
+			display: inline-block;
+			margin-right: 8px;
+			border-radius: 50%;
+			width: 12px;
+			height: 12px;
+			background: $codeColor1;
+		}
 	}
 	&__text {
 		font-size: 20px;
