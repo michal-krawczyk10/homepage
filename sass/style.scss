@@ -51,7 +51,7 @@ a {
 		font-size: 24px;
 		padding: 16px 16px 0;
 		text-align: left;
-		&__header--subheader {
+		&--subheader {
 			font-size: 22px;
 			padding: 16px 24px 0;
 		}
@@ -132,6 +132,16 @@ a {
 	color: $color1;
 	&__hamburger {
 		display: none;
+		@media screen and (max-width: 1024px) {
+			display: block;
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			z-index: 100;
+			color: $color1;
+			background: none;
+			border: none;
+		}
 	}
 	&__navigation {
 		margin: 0;
@@ -141,11 +151,19 @@ a {
 		padding: 0 16px 0 0;
 		list-style-type: none;
 		align-items: center;
+		@media screen and (max-width: 1024px) {
+			background-color: inherit;
+			display: flex;
+			flex-direction: column;
+		}
 		&--button {
 			display: block;
 			line-height: 49px;
 			padding: 0 20px;
 			font-size: 20px;
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+			}
 			&:hover {
 				background-color: $color1;
 				color: $color3;
@@ -153,9 +171,13 @@ a {
 				transition: 0.5s;
 			}
 		}
+		&--toggle {
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
+		}
 	}
 }
-
 .main {
 	grid-area: article;
 	padding: 1em 3em;
@@ -211,29 +233,5 @@ a {
 		&--aw-fish {
 			width: 200px;
 		}
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.topbar__hamburger {
-		display: block;
-		position: absolute;
-		top: 16px;
-		right: 16px;
-		z-index: 100;
-		color: $color1;
-		background: none;
-		border: none;
-	}
-	.topbar__navigation {
-		background-color: inherit;
-		display: flex;
-		flex-direction: column;
-	}
-	.topbar__navigation--button {
-		width: 100%;
-	}
-	.topbar__navigation--toggle {
-		display: none;
 	}
 }
